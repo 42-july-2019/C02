@@ -6,7 +6,7 @@
 /*   By: alabreui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/08 15:43:31 by alabreui          #+#    #+#             */
-/*   Updated: 2019/07/08 15:56:02 by alabreui         ###   ########.fr       */
+/*   Updated: 2019/07/08 20:23:51 by alabreui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,14 @@ char	*ft_strcapitalize(char *str)
 			str[i] = str[i] - 32;
 			is_new_word = 0;
 		}
-		else if (str[i] == ' ' || str[i] == '-' || str[i] == '+')
+		else if (str[i] >= ' ' && str[i] <= '.')
 			is_new_word = 1;
 		else
+		{
+			if (str[i] >= 'A' && str[i] <= 'Z')
+				str[i] = str[i] + 32;
 			is_new_word = 0;
+		}
 		i++;
 	}
 	return (str);

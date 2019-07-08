@@ -6,11 +6,11 @@
 /*   By: alabreui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/08 17:40:53 by alabreui          #+#    #+#             */
-/*   Updated: 2019/07/08 17:57:29 by alabreui         ###   ########.fr       */
+/*   Updated: 2019/07/08 20:24:18 by alabreui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcpy( char *dest, char *src, unsigned int size)
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
 	int		i;
 	char	*result;
