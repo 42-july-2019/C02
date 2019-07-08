@@ -6,9 +6,10 @@
 /*   By: alabreui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/06 10:04:46 by alabreui          #+#    #+#             */
-/*   Updated: 2019/07/08 11:24:16 by alabreui         ###   ########.fr       */
+/*   Updated: 2019/07/08 13:37:52 by alabreui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 char	*ft_strcpy(char *dest, char *src)
 {
 	char *result;
