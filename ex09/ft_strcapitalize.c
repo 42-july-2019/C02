@@ -6,9 +6,24 @@
 /*   By: alabreui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/08 15:43:31 by alabreui          #+#    #+#             */
-/*   Updated: 2019/07/08 20:23:51 by alabreui         ###   ########.fr       */
+/*   Updated: 2019/07/09 11:17:29 by alabreui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+int		is_not_alphanumeric(char c)
+{
+	if (!(c >= 'a' && c <= 'z'))
+	{
+		if (!(c >= 'A' && c <= 'Z'))
+		{
+			if (!(c >= '0' && c <= '9'))
+			{
+				return (1);
+			}
+		}
+	}
+	return (0);
+}
 
 char	*ft_strcapitalize(char *str)
 {
@@ -24,7 +39,7 @@ char	*ft_strcapitalize(char *str)
 			str[i] = str[i] - 32;
 			is_new_word = 0;
 		}
-		else if (str[i] >= ' ' && str[i] <= '.')
+		else if (is_not_alphanumeric(str[i]) == 1)
 			is_new_word = 1;
 		else
 		{
