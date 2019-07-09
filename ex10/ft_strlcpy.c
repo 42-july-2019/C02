@@ -6,7 +6,7 @@
 /*   By: alabreui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/08 17:40:53 by alabreui          #+#    #+#             */
-/*   Updated: 2019/07/09 11:25:22 by alabreui         ###   ########.fr       */
+/*   Updated: 2019/07/09 19:30:07 by alabreui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,11 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 		dest[i] = '\0';
 		i++;
 	}
+	while (i < size)
+	{
+		dest[i] = '\0';
+	}
+	dest[i] = '\0';
 	i = 0;
 	while (src[i] != '\0')
 	{
